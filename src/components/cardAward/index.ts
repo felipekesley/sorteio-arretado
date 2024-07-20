@@ -6,7 +6,6 @@ import { FooterCard } from "./footer";
 import { ImageCard } from "./image";
 import { Root } from "./root";
 import { TitleCard } from "./title";
-export { CardAwardList } from "./list";
 
 export const CardAward = {
   Root,

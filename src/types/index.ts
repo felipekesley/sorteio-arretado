@@ -1,4 +1,4 @@
-export type RafflesProps = {
+export type AwardsProps = {
   id: string;
   slug: string;
   title: string;

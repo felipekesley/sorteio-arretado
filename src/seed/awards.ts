@@ -1,4 +1,4 @@
-export const raffles = [
+export const awards = [
   {
     id: crypto.randomUUID(),
     slug: "/exemplo-de-ação-1",

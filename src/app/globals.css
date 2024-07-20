@@ -65,6 +65,9 @@
   }
 
   .appblur {
-    @apply after:absolute after:top-0 after:left-0 after:w-full after:h-[500px] after:bg-blur after:bg-no-repeat after:bg-top after:bg-cover after:z-[0];
+    @apply before:absolute before:top-0 before:left-0 before:w-full before:h-[500px] before:bg-blur before:bg-no-repeat before:bg-top before:bg-cover before:z-[0];
+  }
+  .appblur-2 {
+    @apply after:absolute after:bottom-0 after:left-0 after:w-full after:h-[500px] after:bg-blur2 after:bg-no-repeat after:bg-top after:bg-cover after:z-[0];
   }
 }
