@@ -7,3 +7,10 @@ export type AwardsProps = {
   cotas: string;
   image: string;
 };
+
+export type Cotas = {
+  id: string;
+  quantity: number;
+  price: number;
+  oldPrice: number;
+};

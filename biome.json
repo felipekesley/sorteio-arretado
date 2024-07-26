@@ -21,7 +21,8 @@
 				"noArrayIndexKey": "off"
 			},
 			"a11y": {
-				"useValidLang": "off"
+				"useValidLang": "off",
+				"useKeyWithClickEvents": "off"
 			}
 		}
 	}

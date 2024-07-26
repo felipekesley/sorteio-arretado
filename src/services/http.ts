@@ -1,7 +1,8 @@
+import { API_URL } from "@/config";
 import axios, { type AxiosInstance, type AxiosResponse } from "axios";
 
 export const http: AxiosInstance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_SITE_API_URL,
+  baseURL: API_URL,
   headers: {
     "Content-Type": "application/json",
   },
