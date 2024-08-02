@@ -11,6 +11,7 @@ export const GetCotas = async () => {
       {data?.map((item, index) => (
         <CardCotas.Root
           quantity={item.quantity}
+          price={item.price}
           key={item.id}
           className={cn("col-span-1", index === 0 && styles)}
         >

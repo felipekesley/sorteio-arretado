@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { addQuantityAtom, removeQuantityAtom } from "@/store/actions";
 import { cotasAtom } from "@/store/atoms";
+import { formatMoney } from "@/utils";
 import { useAtom } from "jotai";
 import { Minus, Plus } from "lucide-react";
 import type { ComponentPropsWithoutRef } from "react";
@@ -60,7 +61,10 @@ export const AddCotas = ({ className }: { className: string }) => {
         <Title tag="h2" fontWeight="bold" className="text-white text-center">
           {cotas.quantity} Cotas
         </Title>
-        <p className="text-white">Valor unitário: R$ 0,15</p>
+        <p className="text-white">
+          Valor unitário:{" "}
+          {cotas.price > 0 ? formatMoney(cotas.quantity / cotas.price) : 0}
+        </p>
       </div>
       <div className="flex gap-2">
         <Btn onClick={() => handleAddQuantity(1)}>
